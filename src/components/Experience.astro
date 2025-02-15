@@ -1,0 +1,59 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Creador de Contenido",
+    company: "Somos Brandon y Rubén TV",
+    description:
+      "Produzco contenido sobre tecnología en YouTube, TikTok e Instagram, con enfoque en reviews de gadgets y tutoriales. Busco generar valor para la comunidad y colaborar con marcas tecnológicas.",
+    link: "https://www.youtube.com/@BrandonYRubenTV",
+  },
+  {
+    date: "2024",
+    title: "Embajador de Marca",
+    company: "Oppo",
+    description:
+      "Colaboramos con Oppo en la promoción del Oppo Watch X, creando contenido exclusivo y mostrando sus funcionalidades en redes sociales.",
+  },
+  {
+    date: "2023",
+    title: "Desarrollador Web (Servicio Social)",
+    company: "Universidad Politécnica de Tecámac",
+    description:
+      "Desarrollé una biblioteca digital en Laravel 8 y PHP para mejorar el acceso a recursos educativos dentro de la universidad.",
+  },
+  {
+    date: "2023",
+    title: "Técnico en Redes",
+    company: "Proyecto Académico (Universidad Politécnica de Tecámac)",
+    description:
+      "Configuración de redes LAN y VLAN utilizando Packet Tracer de Cisco para simular y administrar entornos de red eficientes.",
+  },
+  {
+    date: "2025",
+    title: "Desarrollador Web",
+    company: "Proyecto Personal",
+    description:
+      "Diseño y desarrollo de un portafolio web profesional, optimizado para mostrar mis colaboraciones, contenido y habilidades técnicas en desarrollo web.",
+  },
+  {
+    date: "Actualmente...",
+    title: "Editor y Productor de Contenido",
+    company: "Somos Brandon y Rubén TV",
+    description:
+      "Edición de videos para YouTube, TikTok e Instagram, utilizando herramientas como DaVinci Resolve, Premiere Pro o CapCut,Photoshop para optimizar la calidad y el engagement.",
+  },
+]
+
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
